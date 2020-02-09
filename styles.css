@@ -1,35 +1,56 @@
-.intro
-{
+.beachpic {
+  background-image: url("images/beach.jpg");
+  /* Set a specific height */
+  min-height: 700px; 
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+.beachtext{
+  position: absolute;
+  display: block;
   font-family:Arial;
   font-size: 150px;
   font-style: oblique;
   color: white;
   text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
-body {
-  background-repeat: no-repeat; 
-  background-attachment: fixed; 
-  background-position: center;
-  background-size: 700px;
-}
-
-.center {
+.center{
+  position: absolute;
   display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 60%;
+  text-align: center;
+  top: 110%;
+  left: 50%;
+  width: 100%;
+  transform: translate(-50%, -50%);
 }
 
 .center img{
-  height: 40px;
-  margin-left: 115px;
+  width: 4%;
+  margin: 5%;
+}
+
+.footertext{
+  font-size: small;
+  text-align: center; 
+  position: absolute;
+  top: 120%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .CommentBox {
   width:670px;
   color:white;
-  margin-top:70px;
+  top:70px;
   margin-left: 300px;
   text-align: center;
   font-style:italic;
