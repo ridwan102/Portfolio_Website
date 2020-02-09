@@ -27,10 +27,10 @@ body {
 }
 
 .CommentBox {
-  width:1000px;
-  height:100px;
-  color:black;
-  margin-top:100px;
-  margin-left: 100px;
+  width:670px;
+  color:white;
+  margin-top:70px;
+  margin-left: 300px;
+  text-align: center;
   font-style:italic;
 }
