@@ -34,35 +34,41 @@ body, html {
   transform: translate(-50%, -50%);
 }
 
-.center{
+.selfpic{
+  position: absolute;
+  top: 138%;
+  left: 28%;
+  width: 22%;
+  transform: translate(-50%, -50%);
+}
+
+.bio{
+  position: absolute;
+  display: block;
+  text-align: left;
+  font-family: itc-avant-garde-gothic-pro,sans-serif;
+  top: 140%;
+  left: 72%;
+  width: 35%;
+  transform: translate(-50%, -50%);
+}
+
+.font-weight-bold {
+  font-weight: bold;
+  font-size: 300%;
+}
+
+.linklogos{
   position: absolute;
   display: block;
   text-align: center;
-  top: 110%;
+  top: 185%;
   left: 50%;
   width: 100%;
   transform: translate(-50%, -50%);
 }
 
-.center img{
+.linklogos img{
   width: 4%;
   margin: 5%;
-}
-
-.footertext{
-  font-size: small;
-  text-align: center; 
-  position: absolute;
-  top: 120%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.CommentBox {
-  width:670px;
-  color:white;
-  top:70px;
-  margin-left: 300px;
-  text-align: center;
-  font-style:italic;
 }
