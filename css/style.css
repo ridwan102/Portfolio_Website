@@ -276,28 +276,13 @@ header {
 .home{
     /* take background image out if necessary */
     background-image: url(../images/beach.jpg);
-    height: 100%;
     background-size: cover;
     color: var(--clr-light);
     text-align: center;
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
+    background-blend-mode: multiply;
 }
-
-/* Alternate Beach Text */
-/*
-.beachtext{
-    position: absolute;
-    font-family:Arial;
-    font-size: 1000%;
-    font-style: oblique;
-    color: white;
-    text-align: center;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
-*/
 
 .beachtext{
     position: relative;
@@ -318,6 +303,7 @@ header {
     background-image: url(../images/portfolio/portfolio1.jpg);
     background-size: cover;
     background-blend-mode: multiply;
+    background-attachment: fixed;
     color: var(--clr-light);
     text-align: center;
 }
