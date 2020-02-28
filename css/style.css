@@ -101,10 +101,12 @@ h3 { font-size: var(--fs-h3)}
 
 .section__title {
     margin-bottom: .25em;
+    font-family: var(--ff-primary);
 }
 
 .section__title--intro {
     font-weight: var(--fw-reg);
+    
 }
 
 .section__title--intro strong {
@@ -129,7 +131,6 @@ h3 { font-size: var(--fs-h3)}
 header {
     display: flex;
     justify-content: space-between;
-    padding: 1em;
 }
 
 .nav {
@@ -274,14 +275,13 @@ header {
 /* Beach Intro */
 
 .home{
-    /* take background image out if necessary */
+    background-color: var(--clr-dark);
     background-image: url(../images/beach.jpg);
     background-size: cover;
     color: var(--clr-light);
     text-align: center;
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
-    background-blend-mode: multiply;
 }
 
 .beachtext{
@@ -326,9 +326,16 @@ header {
 .services{
     margin-bottom: 4em;
 }
+
+.service__title{
+    font-family: var(--ff-secondary);
+    font-size: var(--fs-h3);
+}
+
 .service{
     max-width: 500px;
     margin: 0 auto;
+    
 }
 
 @media (min-width: 800px){
@@ -387,6 +394,99 @@ header {
     }
 }
 
+/* Project */
+/* Source: https://www.w3schools.com/howto/howto_js_slideshow.asp */
+
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: var(--clr-light);
+  font-size: var(--fs-h3);
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+  background: var(--clr-accent);
+  padding: .25em 1em;
+  font-family: var(--ff-secondary);
+  margin-bottom: 1em;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
 /* Pictures */
 
 .pictures {
@@ -403,7 +503,8 @@ header {
 
 .portfolio{
     display: grid;
-    grid-template-columns: auto auto auto;
+    /* grid-template-columns: auto auto auto; */
+    grid-template-columns: repeat(auto-fit, minmax(305px, 1fr));
 }
 
 .portfolio__img{
@@ -431,15 +532,12 @@ header {
     text-align: center;
     padding: 2.5em 0;
     font-size: var(--fs-h3);
+    font-family: var(--ff-secondary);
 }
 
 .footer a { 
     color: inherit;
     text-decoration: none;
-}
-
-.footer__link{
-    font-weight: var(--fw-bold);
 }
 
 .footer__link:hover,
