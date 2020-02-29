@@ -279,8 +279,13 @@ header {
     background-size: cover;
     color: var(--clr-light);
     text-align: center;
-    /* Create the parallax scrolling effect */
     background-attachment: fixed;
+}
+
+@media (min-width: 800px){
+    .home{
+        max-width: 100%;
+    }
 }
 
 
