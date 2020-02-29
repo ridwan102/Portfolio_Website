@@ -214,7 +214,6 @@ header {
     transition: transform 350ms ease-in-out;
 }
 
-
 .hamburger::before,
 .hamburger::after {
     content:'';
@@ -293,8 +292,6 @@ header {
     margin-bottom: 14vw;
     transform: translate(0%, 20%);
 }
-
-
 
 /* My services section */ 
 
