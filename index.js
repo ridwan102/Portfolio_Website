@@ -59,6 +59,7 @@ function showSlides() {
   setTimeout(showSlides, 5000); // Change image every 5 seconds
 }
 
+//JQuery: https://www.youtube.com/watch?v=RY5ZAUtrlaM
 (function() {
   
   var aboutEl = $('section.about-me'),
@@ -74,7 +75,7 @@ function showSlides() {
 (function() {
   
   var aboutEl = $('section.my-services'),
-      aboutElOffset = aboutEl.offset().top/2,
+      aboutElOffset = aboutEl.offset().top/1.4,
       documentEl = $(document);
   
   documentEl.on('scroll', function() {
@@ -86,7 +87,7 @@ function showSlides() {
 (function() {
   
   var aboutEl = $('section.work'),
-      aboutElOffset = aboutEl.offset().top/1.5,
+      aboutElOffset = aboutEl.offset().top/1.3,
       documentEl = $(document);
   
   documentEl.on('scroll', function() {
