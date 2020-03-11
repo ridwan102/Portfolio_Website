@@ -298,65 +298,16 @@ header {
     transform: translate(0%, 20%);
 }
 
-/* My services section */ 
-
-.my-services{
-    background-color: var(--clr-dark);
-    /* take background image out if necessary */
-    background-image: url(images/portfolio/portfolio1.jpg);
-    background-size: cover;
-    background-blend-mode: multiply;
-    background-attachment: fixed;
-    color: var(--clr-light);
-    text-align: center;
-}
-
-.section__title--services{
-    color: var(--clr-accent);
-    position: relative;
-}
-
-.section__title--services::after{
-    content: '';
-    display: block;
-    width: 2em;
-    height: 1px;
-    margin: 0.5em auto 1em;
-    background: var(--clr-light);
-    opacity: 0.25;
-}
-
-.services{
-    margin-bottom: 4em;
-}
-
-.service__title{
-    font-family: var(--ff-secondary);
-    font-size: var(--fs-h3);
-}
-
-.service{
-    max-width: 500px;
-    margin: 0 auto;
-}
-
-@media (min-width: 800px){
-    .services{
-        display: flex;
-        max-width: 1000px;
-        margin: 0 auto;
-    }
-
-    .service + .service {
-        margin-left: 2em;
-    }
-}
-
 /* About me */
 
 .about-me{
     max-width: 1000px;
     margin: 0 auto;
+    height: 100vh;
+
+    /*jquery*/
+    transform-style: preserve-3d;
+    transform: perspective(800px);
 }
 
 .about-me__img{
@@ -396,7 +347,98 @@ header {
     }
 }
 
-/* Project */
+.about-me h2, .about-me p, .about-me img {
+    transition: all 1s ease;
+}
+.about-me.hidden h2 {
+    opacity: 0;
+    transform: translate3d(0, 0, 400px) rotateY(-40deg);
+}
+.about-me.hidden p {
+    opacity: 0;
+    transform: translate3d(0, 0, 400px) rotateY(40deg);
+}
+
+.about-me.hidden img{
+    opacity: 0;
+    transform: translate3d(0, 0, 400px) rotateY(-40deg);
+}
+
+
+/* My services section */ 
+
+.my-services{
+    background-color: var(--clr-dark);
+    /* take background image out if necessary */
+    background-image: url(images/portfolio/portfolio1.jpg);
+    background-size: cover;
+    background-blend-mode: multiply;
+    background-attachment: fixed;
+    color: var(--clr-light);
+    text-align: center;
+    height: 100vh;
+}
+
+.section__title--services{
+    color: var(--clr-accent);
+    position: relative;
+}
+
+.section__title--services::after{
+    content: '';
+    display: block;
+    width: 2em;
+    height: 1px;
+    margin: 2em auto 1em;
+    background: var(--clr-light);
+    opacity: 0.25;
+}
+
+.services{
+    margin-bottom: 4em;
+}
+
+.service__title{
+    font-family: var(--ff-secondary);
+    font-size: var(--fs-h3);
+}
+
+.service{
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+@media (min-width: 800px){
+    .services{
+        display: flex;
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+
+    .service + .service {
+        margin-left: 2em;
+    }
+}
+
+.my-services h2, .my-services p, .my-services div{ 
+    transition: all 1s ease;
+}
+.my-services.hidden h2 {
+    opacity: 0;
+    transform: translate3d(0, 100px, 0);
+}
+
+.my-services.hidden div {
+    opacity: 0;
+    transform: translate3d(0, 200px, 0);
+}
+
+.my-services.hidden p {
+    opacity: 0;
+    transform: translate3d(0, 300px, 0);
+}
+
+/* Projects */
 /* Source: https://www.w3schools.com/howto/howto_js_slideshow.asp */
 
 * {box-sizing:border-box}
@@ -487,6 +529,14 @@ header {
 @keyframes fade {
   from {opacity: .4}
   to {opacity: 1}
+}
+
+.work{ 
+    transition: all 1s ease;
+}
+.work.hidden {
+    opacity: 0;
+    transform: translate3d(0, 100px, 0);
 }
 
 /* Pictures */

@@ -58,3 +58,39 @@ function showSlides() {
   slides[slideIndex-1].style.display = "block";
   setTimeout(showSlides, 5000); // Change image every 5 seconds
 }
+
+(function() {
+  
+  var aboutEl = $('section.about-me'),
+      aboutElOffset = aboutEl.offset().top/2,
+      documentEl = $(document);
+  
+  documentEl.on('scroll', function() {
+      if ( documentEl.scrollTop() > aboutElOffset && aboutEl.hasClass('hidden') ) aboutEl.removeClass('hidden'); 
+  });
+  
+})();
+
+(function() {
+  
+  var aboutEl = $('section.my-services'),
+      aboutElOffset = aboutEl.offset().top/2,
+      documentEl = $(document);
+  
+  documentEl.on('scroll', function() {
+      if ( documentEl.scrollTop() > aboutElOffset && aboutEl.hasClass('hidden') ) aboutEl.removeClass('hidden'); 
+  });
+  
+})();
+
+(function() {
+  
+  var aboutEl = $('section.work'),
+      aboutElOffset = aboutEl.offset().top/1.5,
+      documentEl = $(document);
+  
+  documentEl.on('scroll', function() {
+      if ( documentEl.scrollTop() > aboutElOffset && aboutEl.hasClass('hidden') ) aboutEl.removeClass('hidden'); 
+  });
+  
+})();
