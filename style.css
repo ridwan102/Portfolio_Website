@@ -303,7 +303,6 @@ header {
 .about-me{
     max-width: 1000px;
     margin: 0 auto;
-    height: 100vh;
 
     /*jquery*/
     transform-style: preserve-3d;
@@ -376,13 +375,11 @@ header {
     background-attachment: fixed;
     color: var(--clr-light);
     text-align: center;
-    height: 100vh;
 }
 
 .section__title--services{
     color: var(--clr-accent);
     position: relative;
-    margin: 1em;
 }
 
 .section__title--services::after{
