@@ -369,7 +369,7 @@ header {
         display: grid;
         -ms-grid-columns: 1fr 2em 200px;
         grid-template-columns: 1fr 200px;
-            grid-template-areas: 
+                grid-template-areas: 
             "title img"
             "subtitle img"
             "text img";
