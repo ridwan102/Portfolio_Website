@@ -315,7 +315,7 @@ header {
 
 .home{
     /* background-color: var(--clr-dark); */
-    background-image: url(images/beach.jpg);
+    background-image: url(beach.jpg);
     background-size: cover;
     color: var(--clr-light);
     text-align: center;
@@ -424,7 +424,7 @@ header {
 .my-services{
     background-color: var(--clr-dark);
     /* take background image out if necessary */
-    background-image: url(images/portfolio/portfolio1.jpg);
+    background-image: url(portfolio/portfolio1.jpg);
     background-size: cover;
     background-blend-mode: multiply;
     background-attachment: fixed;
