@@ -1,3 +1,5 @@
+//navigation settings
+
 const navToggle = document.querySelector('.nav-toggle');
 const navLinks = document.querySelectorAll('.nav__link')
 
@@ -59,7 +61,21 @@ function showSlides() {
   setTimeout(showSlides, 5000); // Change image every 5 seconds
 }
 
+//Scrolled Activated Animation
 //JQuery: https://www.youtube.com/watch?v=RY5ZAUtrlaM
+
+// (function() {
+  
+//   var aboutEl = $('section.home'),
+//       aboutElOffset = aboutEl.offset().top,
+//       documentEl = $(document);
+  
+//   documentEl.on('ready', function() {
+//       if ( documentEl.scrollTop() > aboutElOffset && aboutEl.hasClass('hidden') ) aboutEl.removeClass('hidden'); 
+//   });
+  
+// })();
+
 (function() {
   
   var aboutEl = $('section.about-me'),
@@ -88,6 +104,18 @@ function showSlides() {
   
   var aboutEl = $('section.work'),
       aboutElOffset = aboutEl.offset().top/1.3,
+      documentEl = $(document);
+  
+  documentEl.on('scroll', function() {
+      if ( documentEl.scrollTop() > aboutElOffset && aboutEl.hasClass('hidden') ) aboutEl.removeClass('hidden'); 
+  });
+  
+})();
+
+(function() {
+  
+  var aboutEl = $('section.pictures'),
+      aboutElOffset = aboutEl.offset().top/1.12,
       documentEl = $(document);
   
   documentEl.on('scroll', function() {

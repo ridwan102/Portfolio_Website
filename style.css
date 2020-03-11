@@ -322,6 +322,17 @@ header {
     background-attachment: fixed;
 }
 
+.home div { 
+    -webkit-transition: all 1.5s ease; 
+    -o-transition: all 1.5s ease; 
+    transition: all 1.5s ease;
+}
+.home.hidden div {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100px, 0);
+            transform: translate3d(0, 100px, 0);
+}
+
 @media (min-width: 800px){
     .home{
         max-width: 100%;
@@ -345,12 +356,6 @@ header {
 .about-me{
     max-width: 1000px;
     margin: 0 auto;
-
-    /*jquery*/
-    -webkit-transform-style: preserve-3d;
-            transform-style: preserve-3d;
-    -webkit-transform: perspective(800px);
-            transform: perspective(800px);
 }
 
 .about-me__img{
@@ -397,25 +402,25 @@ header {
 }
 
 .about-me h2, .about-me p, .about-me img {
-    -webkit-transition: all 1s ease;
-    -o-transition: all 1s ease;
-    transition: all 1s ease;
+    -webkit-transition: all 1.5s ease;
+    -o-transition: all 1.5s ease;
+    transition: all 1.5s ease;
 }
 .about-me.hidden h2 {
     opacity: 0;
-    -webkit-transform: translate3d(0, 0, 400px) rotateY(-40deg);
-            transform: translate3d(0, 0, 400px) rotateY(-40deg);
+    -webkit-transform: translate3d(0, 100px, 0);
+            transform: translate3d(0, 100px, 0);
 }
 .about-me.hidden p {
     opacity: 0;
-    -webkit-transform: translate3d(0, 0, 400px) rotateY(40deg);
-            transform: translate3d(0, 0, 400px) rotateY(40deg);
+    -webkit-transform: translate3d(0, 200px, 0);
+            transform: translate3d(0, 200px, 0);
 }
 
 .about-me.hidden img{
     opacity: 0;
-    -webkit-transform: translate3d(0, 0, 400px) rotateY(-40deg);
-            transform: translate3d(0, 0, 400px) rotateY(-40deg);
+    -webkit-transform: translate3d(0, 400px, 0);
+            transform: translate3d(0, 400px, 0);
 }
 
 
@@ -476,9 +481,9 @@ header {
 }
 
 .my-services h2, .my-services p, .my-services div{ 
-    -webkit-transition: all 1s ease; 
-    -o-transition: all 1s ease; 
-    transition: all 1s ease;
+    -webkit-transition: all 1.5s ease; 
+    -o-transition: all 1.5s ease; 
+    transition: all 1.5s ease;
 }
 .my-services.hidden h2 {
     opacity: 0;
@@ -488,14 +493,14 @@ header {
 
 .my-services.hidden div {
     opacity: 0;
-    -webkit-transform: translate3d(0, 200px, 0);
-            transform: translate3d(0, 200px, 0);
+    -webkit-transform: translate3d(0, 100px, 0);
+            transform: translate3d(0, 100px, 0);
 }
 
 .my-services.hidden p {
     opacity: 0;
-    -webkit-transform: translate3d(0, 300px, 0);
-            transform: translate3d(0, 300px, 0);
+    -webkit-transform: translate3d(0, 100px, 0);
+            transform: translate3d(0, 100px, 0);
 }
 
 /* Projects */
@@ -598,15 +603,23 @@ header {
   to {opacity: 1}
 }
 
-.work{ 
+.work h2, .work div{ 
     -webkit-transition: all 1s ease; 
     -o-transition: all 1s ease; 
     transition: all 1s ease;
+
 }
-.work.hidden {
+
+.work.hidden h2{
     opacity: 0;
     -webkit-transform: translate3d(0, 100px, 0);
             transform: translate3d(0, 100px, 0);
+}
+
+.work.hidden div {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 200px, 0);
+            transform: translate3d(0, 200px, 0);
 }
 
 /* Pictures */
@@ -660,6 +673,23 @@ header {
         -ms-transform: scale(1.2);
             transform: scale(1.2);
     opacity: 1;
+}
+
+.pictures h2, .pictures div{ 
+    -webkit-transition: all 1.5s ease; 
+    -o-transition: all 1.5s ease; 
+    transition: all 1.5s ease;
+}
+.pictures.hidden h2 {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100px, 0);
+            transform: translate3d(0, 100px, 0);
+}
+
+.pictures.hidden div {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 200px, 0);
+            transform: translate3d(0, 200px, 0);
 }
 
 /* footer */
