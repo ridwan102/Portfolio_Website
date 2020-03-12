@@ -37,7 +37,7 @@
                     <li class="nav__item"><a href="#services" class="nav__link">Services</a></li>
                     <li class="nav__item"><a href="#work" class="nav__link">My Projects</a></li>
                     <li class="nav__item"><a href="#pictures" class="nav__link">Pictures</a></li>
-                    <li class="nav__item"><a href="#videos" class="nav__link">Videos</a></li>
+                    <!-- <li class="nav__item"><a href="#videos" class="nav__link">Videos</a></li> -->
                     <li class="nav__item"><a href="#footer" class="nav__link">Contact</a></li>
                 </ul>
             </nav>
@@ -86,9 +86,26 @@
                 <div class="service">
                     <div class="service__title">Full Stack Developer</div>
                     <p>I am a fullstack developer with projects completed with HTML, CSS, JavaScript, 
-                    and Python. I also have experience working with SQL and Postgres databases 
-                    along with deploying webapps on Heroku. 
+                    and Python. I also have experience working with SQL and PostgreSQL databases 
+                    along with deployment onto Heroku. 
                     </p>
+                    <ul class="logo-list">
+                        <li class="social-list__item">
+                            <i class="fab fa-python fa-2x"></i>
+                        </li>
+                        <li class="social-list__item">
+                            <i class="fab fa-js fa-2x"></i>
+                        </li>
+                        <li class="social-list__item">
+                            <i class="fab fa-html5 fa-2x"></i>
+                        </li>
+                        <li class="social-list__item">
+                            <i class="fab fa-css3 fa-2x"></i>
+                        </li>
+                        <li class="social-list__item">
+                            <i class="fab fa-github fa-2x"></i>
+                        </li>
+                    </ul>
                 </div> <!-- / service -->
 
                 <div class="service">
@@ -112,22 +129,38 @@
               <a href="http://cs50stock.herokuapp.com/" target="_blank">
                 <img src="images/projects/ThisIsRidStockTrader.png" alt="ThisIsRidStockTrader" style="width:100%">
               </a>
-              <div class="text">ThisIsRid Stock Trader
+              <div class="section__description--work">
+                <h3 class="section__subtitle--work">ThisIsRid Stock Trader</h3>
                 <p> Stock trader web app that allows user to receive quote, buy and sell stock. </p>
+                <p> Python, HTML, CSS, PostgreSQL, Heroku</p>
                 <a class="github__link" href="https://github.com/ridwan102/cs50stock" target="_blank">
-                <i class="fab fa-github fa-2x"></i></a>
+                    <i class="fab fa-github fa-2x"></i></a>
               </div>
             </div>
 
             <div class="mySlides fade">
               <img src="images/projects/BPAMProposalGenerator.png" alt="BPAMProposalGenerator" style="width:100%">
-              <div class="text">Bright Power Proposal Generator
-                <p> Proposal generator within Microsoft Word that calls different project scopes into document
+              <div class="section__description--work">
+                <h3 class="section__subtitle--work">Bright Power Proposal Generator</h3>
+                <p> Proposal generator within Microsoft Word that calls different project scopes into document using Macros</p>
+                <p>XML, VBA, Macros, Microsoft Word</p>
                 <a class="github__link" href="https://github.com/ridwan102/Bright_Power_Account_Management_Proposal_Generator" target="_blank">
                     <i class="fab fa-github fa-2x"></i></a>
-              </p>
               </div>
             </div>
+
+            <div class="mySlides fade">
+                <a href="https://ridwan102.github.io/RockPaperScissors/" target="_blank">
+                  <img src="images/projects/RockPaperScissors.png" alt="RockPaperScissors" style="width:100%">
+                </a>
+                <div class="section__description--work">
+                  <h3 class="section__subtitle--work">Rock, Paper, Scissors</h3>
+                  <p> Play Rock, Paper, Scissors against the computer. First to 5 wins!</p>
+                  <p> JavaScript, HTML, CSS</p>
+                  <a class="github__link" href="https://github.com/ridwan102/RockPaperScissors" target="_blank">
+                      <i class="fab fa-github fa-2x"></i></a>
+                </div>
+              </div>
 
             <!-- Next and previous buttons -->
             <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
@@ -140,6 +173,7 @@
           <div style="text-align:center">
             <span class="dot" onclick="currentSlide(1)"></span>
             <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
           </div>
 
         </section>
@@ -198,10 +232,11 @@
             </div>
         </section>
 
-        <!-- Videos -->
-        <!-- <section>
-          <iframe width="500" height="320" src="https://www.youtube.com/watch?v=WfMMfHQxwJY&t=1s">
-        </iframe> -->
+        <!-- Videos
+        <section class="video" id="videos">
+            <iframe src="https://www.youtube.com/embed/WfMMfHQxwJY" 
+            frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </section> -->
 
         <!-- Footer -->
         <footer class="footer" id="footer">
