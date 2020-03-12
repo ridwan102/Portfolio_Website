@@ -127,11 +127,14 @@ h3 { font-size: var(--fs-h3)}
     font-size: var(--fs-h3);
 }
 
+.section__subtitle--about{
+    color: var(--clr-light);
+}
 .section__subtitle--intro,
 .section__subtitle--about{
     background: var(--clr-accent);
     padding: .25em 1em;
-    font-family: var(--ff-secondary);
+    font-family: var(--ff-primary);
     margin-bottom: 1em;
 }
 
@@ -457,7 +460,7 @@ header {
 }
 
 .service__title{
-    font-family: var(--ff-secondary);
+    font-family: var(--ff-primary);
     font-size: var(--fs-h3);
 }
 
@@ -563,9 +566,15 @@ header {
   text-align: center;
   background: var(--clr-accent);
   padding: .25em 1em;
-  font-family: var(--ff-secondary);
+  font-family: var(--ff-primary);
   margin-bottom: 1em;
 }
+
+.github__link{
+    padding: .5em;
+    color: var(--clr-dark);
+}
+
 
 /* The dots/bullets/indicators */
 .dot {
@@ -601,6 +610,10 @@ header {
 @keyframes fade {
   from {opacity: .4}
   to {opacity: 1}
+}
+
+.work_description{
+    text-align: center;
 }
 
 .work h2, .work div{ 
@@ -700,7 +713,7 @@ header {
     text-align: center;
     padding: 2.5em 0;
     font-size: var(--fs-h3);
-    font-family: var(--ff-secondary);
+    font-family: var(--ff-primary);
 }
 
 .footer a { 
