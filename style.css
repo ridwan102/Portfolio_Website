@@ -66,7 +66,7 @@ img{
 strong { font-weight: var(--fw-bold)}
 
 :focus{
-    outline: 3px solid var(--clr-accent);
+    outline: none;
     outline-offset: 3px;
 }
 
@@ -167,6 +167,7 @@ header {
     -o-transition: transform 750ms cubic-bezier(.5, 0, .5, 1);
     transition: transform 750ms cubic-bezier(.5, 0, .5, 1);
     transition: transform 750ms cubic-bezier(.5, 0, .5, 1), -webkit-transform 750ms cubic-bezier(.5, 0, .5, 1);
+
 }
 
 .nav__list {
@@ -535,7 +536,6 @@ header {
 /* Source: https://www.w3schools.com/howto/howto_js_slideshow.asp */
 
 
-
 * {-webkit-box-sizing:border-box;box-sizing:border-box}
 
 /* Slideshow container */
@@ -609,6 +609,11 @@ header {
   background: var(--clr-accent);
   font-family: var(--ff-primary);
   font-size: var(--fs-h3);
+}
+
+.work__img{
+    -webkit-box-shadow: var(--bs);
+            box-shadow: var(--bs);
 }
 
 .github__link{
