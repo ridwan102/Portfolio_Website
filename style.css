@@ -190,7 +190,7 @@ header {
 }
 
 .nav__link{
-    color: var(--clr-light);
+    color: var(--clr-accent);
     text-decoration: none;
 }
 
@@ -237,7 +237,7 @@ header {
 
 .hamburger {
     display: block;
-    position: relative;
+    position: fixed;
 }
 
 .hamburger,
