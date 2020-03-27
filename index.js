@@ -65,6 +65,42 @@ function showSlides() {
     setTimeout(showSlides, 5000); // Change image every 5 seconds
 }
 
+//Picture slideshow
+//Source: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_js_lightbox
+function openModal() {
+    document.getElementById("myModal").style.display = "block";
+}
+  
+function closeModal() {
+    document.getElementById("myModal").style.display = "none";
+}
+
+var slideIndexPic = 0;
+
+function plusSlidesPic(n) {
+    showSlidesPic(slideIndexPic += n);
+}
+  
+function currentSlidePic(n) {
+    showSlidesPic(slideIndexPic = n);
+}
+
+function showSlidesPic(n) {
+    var i;
+    var slides = document.getElementsByClassName("myPictures");
+    if (n > slides.length) {slideIndexPic = 1}
+    if (n < 1) {slideIndexPic = slides.length}
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndexPic-1].style.display = "block";
+    dots[slideIndexPic-1].className += " active";
+    captionText.innerHTML = dots[slideIndexPic-1].alt;
+}
+
 
 //Scrolled Activated Animation
 //JQuery: https://www.youtube.com/watch?v=RY5ZAUtrlaM
@@ -128,3 +164,35 @@ function showSlides() {
   });
   
 })();
+
+(function() {
+  
+    var aboutEl = $('section.video'),
+        aboutElOffset = aboutEl.offset().top,
+        documentEl = $(document);
+    
+    documentEl.on('scroll', function() {
+        if ( documentEl.scrollTop() > aboutElOffset && aboutEl.hasClass('hidden') ) aboutEl.removeClass('hidden'); 
+    });
+    
+  })();
+
+//Video
+
+;(function() {
+    
+    // other stuff
+    function setClickHandler(id, fn) {
+        document.getElementById(id).onclick = fn
+    }
+
+    setClickHandler('video', function(e) {
+        var className = e.target.className
+        if (~className.indexOf('vimeo')) {
+            BigPicture({
+                el: e.target,
+                vimeoSrc: e.target.getAttribute('vimeoSrc'),
+            })
+        }
+    })
+})()

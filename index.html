@@ -36,8 +36,8 @@
                     <li class="nav__item"><a href="#about" class="nav__link">My Story</a></li>
                     <li class="nav__item"><a href="#services" class="nav__link">What I Do</a></li>
                     <li class="nav__item"><a href="#work" class="nav__link">Projects</a></li>
-                    <li class="nav__item"><a href="#pictures" class="nav__link">Pictures</a></li>
-                    <!-- <li class="nav__item"><a href="#videos" class="nav__link">Videos</a></li> -->
+                    <li class="nav__item"><a href="#pictures" class="nav__link">Memories</a></li>
+                    <li class="nav__item"><a href="#video" class="nav__link">Video</a></li>
                     <li class="nav__item"><a href="#footer" class="nav__link">Contact</a></li>
                 </ul>
             </nav>
@@ -108,12 +108,12 @@
                     </ul>
                 </div> <!-- / service -->
 
-                <div class="service">
+                <!-- <div class="service">
                     <div class="service__title">Data Scientist</div>
                     <p>I have experience working with large datasets throughout my professional career. Recently,
                     I have worked with IBM Watson and Jupyter Notebooks in my IBM Data Certification courses. 
                     </p>
-                </div> <!-- / service -->
+                </div> -->
             </div> <!-- / services -->
         </section>
 
@@ -183,58 +183,116 @@
             <div class="portfolio">
 
                 <!-- Portfolio Item 01 -->
-                <a href="https://www.instagram.com/thisisrid/" class="portfolio__item" target="_blank">
-                    <img src="images/portfolio/portfolio1.jpg" alt="CitiField" class="portfolio__img">
+                <a class="portfolio__item">
+                    <img src="images/portfolio/portfolio1.jpg" alt="CitiField" onclick="openModal();currentSlidePic(1)" 
+                    class="portfolio__img">
                 </a>
 
                 <!-- Portfolio Item 02 -->
-                <a href="https://www.instagram.com/thisisrid/" class="portfolio__item" target="_blank">
-                    <img src="images/portfolio/portfolio2.jpg" alt="" class="portfolio__img">
+                <a class="portfolio__item">
+                    <img src="images/portfolio/portfolio2.jpg" alt="CNU" onclick="openModal();currentSlidePic(2)"
+                    class="portfolio__img">
                 </a>
 
                 <!-- Portfolio Item 03 -->
-                <a href="https://www.instagram.com/thisisrid/" class="portfolio__item" target="_blank">
-                    <img src="images/portfolio/portfolio3.jpg" alt="" class="portfolio__img">
+                <a class="portfolio__item">
+                    <img src="images/portfolio/portfolio3.jpg" alt="Amsterdam" onclick="openModal();currentSlidePic(3)"
+                    class="portfolio__img">
                 </a>
 
                 <!-- Portfolio Item 04 -->
-                <a href="https://www.instagram.com/thisisrid/" class="portfolio__item" target="_blank">
-                    <img src="images/portfolio/portfolio4.jpg" alt="" class="portfolio__img">
+                <a class="portfolio__item">
+                    <img src="images/portfolio/portfolio4.jpg" alt="GrandCentral" onclick="openModal();currentSlidePic(4)" 
+                    class="portfolio__img">
                 </a>
 
                 <!-- Portfolio Item 05 -->
-                <a href="https://www.instagram.com/thisisrid/" class="portfolio__item" target="_blank">
-                    <img src="images/portfolio/portfolio5.jpg" alt="" class="portfolio__img">
+                <a class="portfolio__item">
+                    <img src="images/portfolio/portfolio5.jpg" alt="AmsterdamCentraal" onclick="openModal();currentSlidePic(5)"
+                    class="portfolio__img">
                 </a>
 
                 <!-- Portfolio Item 06 -->
-                <a href="https://www.instagram.com/thisisrid/" class="portfolio__item" target="_blank">
-                    <img src="images/portfolio/portfolio6.jpg" alt="" class="portfolio__img">
+                <a class="portfolio__item">
+                    <img src="images/portfolio/portfolio6.jpg" alt="HorseshoeBend" onclick="openModal();currentSlidePic(6)"
+                    class="portfolio__img">
                 </a>
 
                 <!-- Portfolio Item 07 -->
-                <a href="https://www.instagram.com/thisisrid/" class="portfolio__item" target="_blank">
-                    <img src="images/portfolio/portfolio7.jpg" alt="" class="portfolio__img">
+                <a class="portfolio__item">
+                    <img src="images/portfolio/portfolio7.jpg" alt="GrandCanyon" onclick="openModal();currentSlidePic(7)"
+                    class="portfolio__img">
                 </a>
 
                 <!-- Portfolio Item 08 -->
-                <a href="https://www.instagram.com/thisisrid/" class="portfolio__item" target="_blank">
-                    <img src="images/portfolio/portfolio8.jpg" alt="" class="portfolio__img">
+                <a class="portfolio__item">
+                    <img src="images/portfolio/portfolio8.jpg" alt="Yosemite" onclick="openModal();currentSlidePic(8)" 
+                    class="portfolio__img">
                 </a>
 
                 <!-- Portfolio Item 09 -->
-                <a href="https://www.instagram.com/thisisrid/" class="portfolio__item" target="_blank">
-                    <img src="images/portfolio/portfolio9.jpg" alt="" class="portfolio__img">
+                <a class="portfolio__item">
+                    <img src="images/portfolio/portfolio9.jpg" alt="AmsterdamFaraz" onclick="openModal();currentSlidePic(9)"
+                    class="portfolio__img">
                 </a>                 
+            </div>
+            
+            <!-- The Modal/Lightbox -->
+            <div id="myModal" class="modal">
+                <span class="close cursor" onclick="closeModal()">&times;</span>
+                <div class="modal-content">
+            
+                    <div class="myPictures">
+                        <img src="images/portfolio/portfolio1.jpg" style="width:100%">
+                    </div>
+                
+                    <div class="myPictures">
+                        <img src="images/portfolio/portfolio2.jpg" style="width:100%">
+                    </div>
+                
+                    <div class="myPictures">
+                        <img src="images/portfolio/portfolio3.jpg" style="width:100%">
+                    </div>
+                
+                    <div class="myPictures">
+                        <img src="images/portfolio/portfolio4.jpg" style="width:100%">
+                    </div>
 
+                    <div class="myPictures">
+                        <img src="images/portfolio/portfolio5.jpg" style="width:100%">
+                    </div>
+                
+                    <div class="myPictures">
+                        <img src="images/portfolio/portfolio6.jpg" style="width:100%">
+                    </div>
+                
+                    <div class="myPictures">
+                        <img src="images/portfolio/portfolio7.jpg" style="width:100%">
+                    </div>
+                
+                    <div class="myPictures">
+                        <img src="images/portfolio/portfolio8.jpg" style="width:100%">
+                    </div>
+
+                    <div class="myPictures">
+                        <img src="images/portfolio/portfolio9.jpg" style="width:100%">
+                    </div>
+
+                    <!-- Next/previous controls -->
+                    <a class="prevPic" onclick="plusSlidesPic(-1)">&#10094;</a>
+                    <a class="nextPic" onclick="plusSlidesPic(1)">&#10095;</a>
+                </div>
             </div>
         </section>
 
-        <!-- Videos
-        <section class="video" id="videos">
-            <iframe src="https://www.youtube.com/embed/WfMMfHQxwJY" 
-            frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </section> -->
+        <!-- Videos -->
+        <section class="video hidden" id="video">
+            <div
+                class="vid vimeo"
+                vimeoSrc="401233922"
+            ></div>
+        </section>
+
 
         <!-- Footer -->
         <footer class="footer" id="footer">
@@ -264,6 +322,7 @@
         </footer>
 
         <script src="index.js"></script>
+        <script src="BigPicture.js"></script>
 
     </body>
 </html>
