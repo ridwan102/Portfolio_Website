@@ -105,17 +105,18 @@ function showSlidesPic(n) {
 //Scrolled Activated Animation
 //JQuery: https://www.youtube.com/watch?v=RY5ZAUtrlaM
 
-// (function() {
+(function() {
   
-//   var aboutEl = $('section.home'),
-//       aboutElOffset = aboutEl.offset().top,
-//       documentEl = $(document);
+  var aboutEl = $('section.home'),
+      aboutElOffset = aboutEl.offset().top,
+      documentEl = $(document);
   
-//   documentEl.on('ready', function() {
-//       if ( documentEl.scrollTop() > aboutElOffset && aboutEl.hasClass('hidden') ) aboutEl.removeClass('hidden'); 
-//   });
+    //change scroll function to start when ready 
+  documentEl.on('ready', function() {
+      if (aboutEl.hasClass('hidden') ) aboutEl.removeClass('hidden'); 
+  });
   
-// })();
+})();
 
 (function() {
   
@@ -168,7 +169,7 @@ function showSlidesPic(n) {
 (function() {
   
     var aboutEl = $('section.video'),
-        aboutElOffset = aboutEl.offset().top,
+        aboutElOffset = aboutEl.offset().top/1.1,
         documentEl = $(document);
     
     documentEl.on('scroll', function() {
@@ -181,18 +182,15 @@ function showSlidesPic(n) {
 
 ;(function() {
     
-    // other stuff
     function setClickHandler(id, fn) {
         document.getElementById(id).onclick = fn
     }
 
     setClickHandler('video', function(e) {
-        var className = e.target.className
-        if (~className.indexOf('vimeo')) {
-            BigPicture({
-                el: e.target,
-                vimeoSrc: e.target.getAttribute('vimeoSrc'),
-            })
-        }
+        var className = e.target.className.indexOf('vimeo')
+        BigPicture({
+            el: e.target,
+            vimeoSrc: e.target.getAttribute('vimeoSrc'),
+        })
     })
 })()

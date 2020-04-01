@@ -115,7 +115,6 @@ h3 { font-size: var(--fs-h3)}
 
 .section__title--intro {
     font-weight: var(--fw-reg);
-    
 }
 
 .section__title--intro strong {
@@ -327,10 +326,11 @@ header {
     -o-transition: all 1.5s ease; 
     transition: all 1.5s ease;
 }
+
 .home.hidden div {
     opacity: 0;
-    -webkit-transform: translate3d(0, 100px, 0);
-            transform: translate3d(0, 100px, 0);
+    -webkit-transform: translate3d(0, 75px, 0);
+            transform: translate3d(0, 75px, 0);
 }
 
 @media (min-width: 800px){
@@ -368,7 +368,7 @@ header {
         display: grid;
         -ms-grid-columns: 1fr 2em 200px;
         grid-template-columns: 1fr 200px;
-                grid-template-areas: 
+                    grid-template-areas: 
             "title img"
             "subtitle img"
             "text img";
@@ -426,7 +426,7 @@ header {
 /* My services section */ 
 
 .my-services{
-    background-color: var(--clr-dark);
+    background-color: grey;
     /* take background image out if necessary */
     background-image: url(images/portfolio/portfolio1.jpg);
     background-size: cover;
@@ -437,7 +437,7 @@ header {
 }
 
 .section__title--services{
-    color: var(--clr-accent);
+    color: var(--clr-light);
     position: relative;
 }
 
@@ -448,7 +448,7 @@ header {
     height: 1px;
     margin: 0.5em auto 0.5em;
     background: var(--clr-light);
-    opacity: 0.25;
+    opacity: 0.5;
 }
 
 .services{
@@ -603,7 +603,7 @@ header {
     height: 1px;
     margin: 0.5em auto 0.5em;
     background: var(--clr-dark);
-    opacity: 0.25;
+    opacity: 0.5;
 }
 
 /* Caption text */
@@ -677,7 +677,7 @@ header {
 }
 
 .section__title--pictures{
-    color: var(--clr-accent);
+    color: var(--clr-light);
     font-weight: var(--fw-bold);
     margin-bottom: 1em;
     text-align: center;
@@ -689,8 +689,8 @@ header {
     width: 2em;
     height: 1px;
     margin: 0.5em auto 0.5em;
-    background: var(--clr-accent);
-    opacity: 0.25;
+    background: var(--clr-light);
+    opacity: .5;
 }
 
 .portfolio{
@@ -792,6 +792,7 @@ header {
 /* Hide the slides by default */
 .myPictures {
     display: none;
+    width: 100%;
 }
 
 /* Next & previous buttons */
@@ -841,13 +842,15 @@ img {
 
 
 /* Video */
+/* Inspiration: https://www.devonstank.com/ */
 
-.video div {
-	margin: 0 auto;
+.video div, .video img {
+    margin: 0 auto;
 	cursor: pointer;
 	border-radius: 2px;
-    max-width: calc(100% - 12px);
-    box-shadow: 0px 0.1em 0.7em rgba(0, 0, 0, 0.2);
+    max-width: 100%;
+    -webkit-box-shadow: 0px 0.1em 0.7em rgba(0, 0, 0, 0.2);
+            box-shadow: 0px 0.1em 0.7em rgba(0, 0, 0, 0.2);
 }
 
 .video.hidden div {
@@ -856,15 +859,15 @@ img {
             transform: translate3d(0, 200px, 0);
 }
 
-
 .vid {
 	height: 550px;
-	width: 1100px;
 	position: relative;
 	background-position: center center;
     background-size: cover;
     background-image:url(images/video.png);
-
+    -webkit-transition: all 1.5s ease; 
+    -o-transition: all 1.5s ease; 
+    transition: all 1.5s ease;
 }
 
 .vid:before,
@@ -875,6 +878,8 @@ img {
 	top: 0;
 	right: 0;
 	bottom: 0;
+	-webkit-transition: opacity 0.2s;
+	-o-transition: opacity 0.2s;
 	transition: opacity 0.2s;
 }
 
