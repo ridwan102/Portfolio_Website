@@ -402,8 +402,12 @@ header {
 }
 
 @media (max-width: 600px){
+    .about-me{
+        text-align: center;
+    }
     .about-me__img{
         max-width: 50%;
+        margin-left: 25%;
     }
 }
 
