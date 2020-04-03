@@ -313,12 +313,11 @@ header {
 /* Beach Intro */
 
 .home{
-    /* background-color: var(--clr-dark); */
     background-image: url(images/beach.jpg);
     background-size: cover;
     color: var(--clr-light);
     text-align: center;
-    background-attachment: fixed;
+    background-attachment: auto;
 }
 
 .home div { 
@@ -378,6 +377,7 @@ header {
     .section__title--about{
         -ms-grid-column: 1;
         grid-column: 1;
+        justify-content: center;
     }
 
     .section__subtitle--about{
@@ -389,6 +389,7 @@ header {
         width: calc(100% + 2em);
         padding-left: 1em;
         padding-right: calc(200px + 4em);
+        justify-content: center;
     }
 
     .about-me__img{
@@ -397,6 +398,12 @@ header {
         grid-column: 2;
         position: relative;
         z-index: 2;
+    }
+}
+
+@media (max-width: 600px){
+    .about-me__img{
+        max-width: 50%;
     }
 }
 
@@ -860,7 +867,7 @@ img {
 }
 
 .vid {
-	height: 550px;
+    height: 550px;
 	position: relative;
 	background-position: center center;
     background-size: cover;
@@ -868,6 +875,12 @@ img {
     -webkit-transition: all 1.5s ease; 
     -o-transition: all 1.5s ease; 
     transition: all 1.5s ease;
+}
+
+@media (max-width: 600px){
+    .vid{
+        height: 220px;
+    }
 }
 
 .vid:before,
