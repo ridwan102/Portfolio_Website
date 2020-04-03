@@ -318,6 +318,7 @@ header {
     color: var(--clr-light);
     text-align: center;
     background-attachment: auto;
+    height: 720px;
 }
 
 .home div { 
@@ -332,21 +333,19 @@ header {
             transform: translate3d(0, 75px, 0);
 }
 
-@media (min-width: 800px){
-    .home{
-        max-width: 100%;
-    }
+.section__title--beachtext{
+    position: center;
+    font-family: Arial;
+    font-size: 1250%;
+    font-style: oblique;
+    margin-top: 5%;
 }
 
-.section__title--beachtext{
-    position: relative;
-    font-family: Arial;
-    font-size: 17vw;
-    font-style: oblique;
-    margin-bottom: 1em;
-    -webkit-transform: translate(0%, 20%);
-        -ms-transform: translate(0%, 20%);
-            transform: translate(0%, 20%);
+@media (max-width: 850px){
+    .section__title--beachtext{
+        margin-top: 17%;
+        font-size: 600%;
+    }
 }
 
 /* About me */
@@ -377,7 +376,6 @@ header {
     .section__title--about{
         -ms-grid-column: 1;
         grid-column: 1;
-        justify-content: center;
     }
 
     .section__subtitle--about{
@@ -389,7 +387,7 @@ header {
         width: calc(100% + 2em);
         padding-left: 1em;
         padding-right: calc(200px + 4em);
-        justify-content: center;
+
     }
 
     .about-me__img{
@@ -441,6 +439,7 @@ header {
     background-attachment: fixed;
     color: var(--clr-light);
     text-align: center;
+    height: 720px;
 }
 
 .section__title--services{
