@@ -27,32 +27,50 @@
     </head>
     <body>
         <header>
-            <button class="nav-toggle" aria-label="toggle navigation">
-                <span class="hamburger"></span>
-            </button>
             <nav class="nav">
+                <div class="burger">
+                  <div class="burger__patty"></div>
+                </div>
+              
                 <ul class="nav__list">
-                    <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
-                    <li class="nav__item"><a href="#about" class="nav__link">My Story</a></li>
-                    <li class="nav__item"><a href="#services" class="nav__link">What I Do</a></li>
-                    <li class="nav__item"><a href="#work" class="nav__link">Projects</a></li>
-                    <li class="nav__item"><a href="#pictures" class="nav__link">Memories</a></li>
-                    <li class="nav__item"><a href="#video" class="nav__link">Video</a></li>
-                    <li class="nav__item"><a href="#footer" class="nav__link">Contact</a></li>
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link orange"><i class="fas fa-home"></i></a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="./Ridwan_Alam_Resume.pdf" class="nav__link orange" download="Ridwan Alam Resume" target="__blank">Resume</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#about" class="nav__link orange">My Story</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#services" class="nav__link orange">What I do</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#work" class="nav__link orange">Projects</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#pictures" class="nav__link orange">Adventures</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#footer" class="nav__link orange">Contact</a>
+                    </li>
+                    <li class="nav__item">
+                        <a class="nav__link orange" href="mailto:ridwan102@gmail.com" target="_blank">
+                        <i class="fas fa-envelope fa-2x"></i></a>
+                    </li>
+                    <li class="nav__item">
+                        <a class="nav__link orange" href="https://github.com/ridwan102" target="_blank">
+                            <i class="fab fa-github fa-2x"></i></a>
+                    </li>
+                    <li class="nav__item">
+                        <a class="nav__link orange" href="https://www.linkedin.com/in/ridwanalam/" target="_blank">
+                            <i class="fab fa-linkedin fa-2x"></i></a>
+                    </li>
+                    <li class="nav__item"></li>
+                    <li class="nav__item"></li>
                 </ul>
-            </nav>
+              </nav>
         </header>
-
-        <!-- Intro -->
-        <!--
-        <section class="intro" id="intro">
-            <h1 class="section__title section__title--intro">
-                Hi, I'm <strong>Ridwan Alam</strong>
-            </h1>
-            <p class="section__subtitle section__subtitle--intro">This is My Story</p>
-            <img src="images/self.png" alt="Ridwan smiling" class="intro__img">
-        </section>
-        -->
 
          <section class="home hidden" id="home">
           <div class="section__title section__title--beachtext" id="hometext">ThisIsRid</div>
@@ -73,6 +91,22 @@
                         The future is what we dream so let's dream together and continue exploring. </p>
                     
                     <p> Keep questioning and stay curious. </p>
+
+                    <!-- <ul class="logo-list2">
+                        <li class="social-list__item">
+                            <a class="orange" href="./Ridwan_Alam_Resume.pdf" download="Ridwan Alam Resume" target="_blank">
+                            <i class="fas fa-file fa-2x"></i></a>
+                        </li>
+                        <li class="social-list__item">
+                            <a class="orange" href="https://www.linkedin.com/in/ridwanalam" target="_blank">
+                            <i class="fab fa-linkedin fa-2x"></i></a>
+                        </li>
+                        <li class="social-list__item">
+                            <a class="orange" href="https://github.com/ridwan102" target="_blank">
+                            <i class="fab fa-github fa-2x"></i></a>
+                        </li>
+                    </ul> -->
+
                 </div>
                 
                 <img src="images/self.png" alt="Ridwan smiling" class="about-me__img">
@@ -85,9 +119,9 @@
             <div class="services">
                 <div class="service">
                     <div class="service__title">Full Stack Developer</div>
-                    <p>I am a fullstack developer with projects completed with HTML, CSS, JavaScript, 
-                    and Python. I also have experience working with SQL and PostgreSQL databases 
-                    along with deployment onto Heroku. 
+                    <p>I am a fullstack developer with projects completed with HTML, CSS, Python, 
+                        JavaScript, TypeScript and React Native. I also have experience working with SQL and 
+                        PostgreSQL databases along with deployment onto Heroku. 
                     </p>
                     <ul class="logo-list">
                         <li class="social-list__item">
@@ -124,6 +158,29 @@
           <div class="slideshow-container">
             
             <!-- Full-width images with number and caption text -->
+
+            <div class="mySlides fade">
+                <a>
+                  <div class="row_Zymptom">
+
+                    <div class="column_Zymptom">
+                      <img src="images/projects/ZymptomLogin.jpg" alt="ZymptomLogin" style="width:100%">
+                    </div>
+                    <div class="column_Zymptom">
+                      <img src="images/projects/ZymptomExplanation.jpg" alt="ZymptomExplanation" style="width:100%">
+                    </div>
+                    <div class="column_Zymptom">
+                      <img src="images/projects/ZymptomSymptoms.jpg" alt="ZymptomSymptoms" style="width:100%">
+                    </div>
+                  </div>
+
+                </a>
+                  <h3 class="section__subtitle--work">Zymptom</h3>
+                  <p> Mobile and web app that allows users to upload symptoms to help spread awareness in hopes of preventing another pandemic</p>
+                  <p> Technologies: TypeScript, React Native, Expo</p>
+                  <a class="github__link" href="https://github.com/rconrardy/HackQuarantine2020" target="_blank">
+                      <i class="fab fa-github fa-2x"></i></a>
+            </div>
             
             <div class="mySlides fade">
               <a href="http://cs50stock.herokuapp.com/" target="_blank">
@@ -296,16 +353,25 @@
 
         <!-- Footer -->
         <footer class="footer" id="footer">
-            <a href="mailto:ridwan102@gmail.com" class="footer__link">ridwan102@gmail.com</a>
             <ul class="social-list">
                 <li class="social-list__item">
-                    <a class="social-list__link" href="https://www.linkedin.com/in/ridwanalam/" target="_blank">
-                    <i class="fab fa-linkedin fa-2x"></i></a>
+                    <a class="social-list__link" href="./Ridwan_Alam_Resume.pdf" download="Ridwan Alam Resume" target="__blank">
+                        <i class="fas fa-file fa-2x"></i></a>
+                </li>
+                <li class="social-list__item">
+                    <a class="social-list__link" href="mailto:ridwan102@gmail.com" target="__blank">
+                        <i class="fas fa-envelope fa-2x"></i></a>
                 </li>
                 <li class="social-list__item">
                     <a class="social-list__link" href="https://github.com/ridwan102" target="_blank">
                     <i class="fab fa-github fa-2x"></i></a>
                 </li>
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://www.linkedin.com/in/ridwanalam/" target="_blank">
+                    <i class="fab fa-linkedin fa-2x"></i></a>
+                </li>
+            </ul>
+            <ul class="social-list">
                 <li class="social-list__item">
                     <a class="social-list__link" href="https://twitter.com/QRidwan102" target="_blank">
                     <i class="fab fa-twitter fa-2x"></i></a>
