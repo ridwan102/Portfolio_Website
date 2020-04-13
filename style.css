@@ -332,7 +332,7 @@ ul {
       height: 95vh;
     }
     .fa-lg{
-        font-size: 1rem;
+        font-size: 1.25rem;
     }
 }
   
@@ -353,6 +353,7 @@ ul {
 }
 .burger:hover {
     background: #272b2e;
+    opacity: 0.75;
 }
 .burger__patty {
     position: relative;
