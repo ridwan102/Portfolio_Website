@@ -56,6 +56,21 @@ var init = function() {
 
 doc.on('ready', init);
 
+
+// const navToggle = document.querySelector('.nav-toggle');
+// const navLinks = document.querySelectorAll('.nav__link')
+
+// navToggle.addEventListener('click', () => {
+//     document.body.classList.toggle('nav-open');
+// });
+
+// //closes hamburger
+// navLinks.forEach(link => {
+//     link.addEventListener('click', () => {
+//         document.body.classList.remove('nav-open'); 
+//     })
+// })
+
 //Automatic Slideshow with Buttons
 //Source: https://stackoverflow.com/questions/43961189/automatic-slideshow-with-button
 var slideIndex = 0;

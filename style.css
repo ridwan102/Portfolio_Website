@@ -275,7 +275,7 @@ ul {
     z-index: 1;
     top: 0;
     right: 0;
-    width: 150px;
+    width: 135px;
     -webkit-backface-visibility: hidden;
             backface-visibility: hidden;
 }
@@ -329,7 +329,10 @@ ul {
       width: 105px;
     }
     .nav__list {
-      height: 90vh;
+      height: 100vh;
+    }
+    .fa-lg{
+        font-size: 1rem;
     }
 }
   
