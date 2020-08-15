@@ -640,6 +640,25 @@ ul {
   font-size: var(--fs-h3);
 }
 
+.tech-group .button {
+    background-color: white;
+    border: 1px solid var(--clr-accent);
+    border-radius: 10px;
+    color: var(--clr-accent);
+    margin-bottom: 20px;
+    padding: 10px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+  }
+  
+ 
+  .tech-group .button:hover {
+    background-color: var(--clr-accent);
+    color: var(--clr-light);
+  }
+
 .work__img{
     -webkit-box-shadow: var(--bs);
             box-shadow: var(--bs);
