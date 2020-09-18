@@ -158,7 +158,6 @@ function showSlidesPic(n) {
     captionText.innerHTML = dots[slideIndexPic-1].alt;
 }
 
-
 //Scrolled Activated Animation
 //JQuery: https://www.youtube.com/watch?v=RY5ZAUtrlaM
 

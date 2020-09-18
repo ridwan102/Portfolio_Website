@@ -137,12 +137,21 @@ h3 { font-size: var(--fs-h3)}
     font-family: var(--ff-primary);
     margin-bottom: 1em;
 }
+  
+  /* Style page content */
+  .main {
+    margin-left: 160px; /* Same as the width of the sidebar */
 
-/* * {
-    box-sizing: border-box;
-  } */
+  }
   
+  /* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
   
+ /* Primary Navbar */ 
+/* 
 ul {
     list-style-type: none;
     padding: 0;
@@ -199,9 +208,9 @@ ul {
     transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
-/* .nav__link:hover {
+.nav__link:hover {
     background: #272b2e;
-} */
+}
 
 @media (max-width: 600px) {
     .nav {
@@ -216,6 +225,8 @@ ul {
 }
   
 .burger {
+    background: #272b2e;
+    opacity: 0.75;
     height: 8vh;
     position: relative;
     display: -webkit-box;
@@ -297,6 +308,44 @@ ul {
       -webkit-transform: scale(0.8) rotate(90deg);
               transform: scale(0.8) rotate(90deg);
     }
+  } */
+
+/* Secondary navbar 
+source: https://www.w3schools.com/howto/howto_css_fixed_sidebar.asp */
+
+.sidenav {
+    display: -webkit-box;
+    height: 100%; /* Full-height: remove this if you want "auto" height */
+    width: 160px; /* Set the width of the sidebar */
+    position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: 0;
+    /* -webkit-box-pack: center;
+        justify-content: center; */
+    -webkit-box-align: center;
+        align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-flow: column wrap;
+    background-color: #2b3033;; /* Black */
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 20px;
+    
+  }
+  
+  /* The navigation menu links */
+  .sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    color: var(--clr-accent);
+    display: block;
+  }
+  
+  /* When you mouse over the navigation links, change their color */
+  .sidenav a:hover {
+    color: #f1f1f1;
   }
   
 .red {
@@ -310,7 +359,7 @@ ul {
 .orange {
     color: #ec962b; 
 }
-
+  
 /* Beach Intro */
 
 .home{
@@ -345,7 +394,7 @@ ul {
     font-family: Arial;
     font-size: 17vw;
     font-style: oblique;
-    margin-bottom: 1em;
+    margin-bottom: 0.65em;
     -webkit-transform: translate(0%, 20%);
         -ms-transform: translate(0%, 20%);
             transform: translate(0%, 20%);
@@ -721,6 +770,21 @@ ul {
     content: "";
     clear: both;
     display: table;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+	cursor: pointer;
+	height: 13px;
+	width: 13px;
+	margin: 0 2px;
+	background-color: #bbb;
+	border-radius: 50%;
+	display: inline-block;
+	transition: background-color 0.6s ease;
+}
+.active, .dot:hover {
+	background-color: #717171;
 }
 
 /* Pictures */

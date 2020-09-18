@@ -29,10 +29,10 @@
         <header>
             <nav class="nav">
                 <div class="burger">
-                  <div class="burger__patty"></div>
+                  <!-- <div class="burger__patty"></div> -->
                 </div>
               
-                <ul class="nav__list">
+                <!-- <ul class="nav__list">
                     <li class="nav__item">
                         <a href="#home" class="nav__link orange"><i class="fas fa-home fa-lg"></i></a>
                     </li>
@@ -68,322 +68,356 @@
                     </li>
                     <li class="nav__item"></li>
                     <li class="nav__item"></li>
-                </ul>
+                </ul> -->
               </nav>
+
+
         </header>
 
-         <section class="home hidden" id="home">
-          <div class="section__title section__title--beachtext" id="hometext">ThisIsRid</div>
-        </section>
+        <div class="sidenav">
+            <a href="#home"><i class="fas fa-home fa-lg"></i></a>
+            <a href="./Ridwan_Alam_Resume.pdf" download="Ridwan Alam Resume" target="__blank">Resume</a>
+            <a href="#about">My Story</a>
+            <a href="#services">What I do</a>
+            <a href="#work">Projects</a>
+            <a href="#pictures">Adventures</a>
 
-        <div class="content">
-            <!-- About me -->
-            <section class="about-me hidden" id="about">
-                <h2 class="section__title section__title--about">I'm Ridwan Alam</h2>
-                <p class="section__subtitle section__subtitle--about">This is My Story</p>
+            <a href="mailto:ridwan102@gmail.com" target="_blank">
+            <i class="fas fa-envelope fa-lg"></i></a>
+     
+            <a href="https://github.com/ridwan102" target="_blank">
+                <i class="fab fa-github fa-lg"></i></a>
+      
+            <a href="https://www.linkedin.com/in/ridwanalam/" target="_blank">
+                <i class="fab fa-linkedin fa-lg"></i></a>
                 
-                <div class="about-me__body">
-                    <p> Technology fascinates me with its endless possibilities. Something such as the 
-                        Hyperloop will fold the world in half and make commutes between Los Angeles and New York in a
-                        couple of hours, and blockchain will lead to a new form of accepted currency. </p>
-                        
-                    <p> I continue to travel to stimulate my curiosity which has opened my eyes up to endless possibilities.
-                        The future is what we dream so let's dream together and continue exploring. </p>
+            <a href="https://www.youtube.com/channel/UCa2-D2XlAeq_3kcCSXkvPTw" target="_blank">
+                <i class="fab fa-youtube fa-lg"></i></a>
+        </div>
+
+        <div class="main">
+            <section class="home hidden" id="home">
+                <div class="section__title section__title--beachtext" id="hometext">ThisIsRid</div>
+            </section>
+
+            <div class="content">
+                <!-- About me -->
+                <section class="about-me hidden" id="about">
+                    <h2 class="section__title section__title--about">I'm Ridwan Alam</h2>
+                    <p class="section__subtitle section__subtitle--about">This is My Story</p>
                     
-                    <p> Keep questioning and stay curious. </p>
+                    <div class="about-me__body">
+                        <p> Technology fascinates me with its endless possibilities. Something such as the 
+                            Hyperloop will fold the world in half and make commutes between Los Angeles and New York in a
+                            couple of hours, and blockchain will lead to a new form of accepted currency. </p>
+                            
+                        <p> I continue to travel to stimulate my curiosity which has opened my eyes up to endless possibilities.
+                            The future is what we dream so let's dream together and continue exploring. </p>
+                        
+                        <p> Keep questioning and stay curious. </p>
+                        <p style="font-style: italic">
+                            I am currently enrolled in the Metis Data Science Bootcamp and searching for employment opportunities.
+                        </p>
+                    </div>
+                    
+                    <img src="images/self.png" alt="Ridwan smiling" class="about-me__img">
+                </section>
+            </div>
+
+            <!-- My Services -->
+            <section class="my-services hidden" id="services">
+                <h2 class="section__title section__title--services">What I do</h2>
+                <div class="services">
+                    <div class="service">
+                        <div class="service__title">Full Stack Developer</div>
+                        <p>I am a fullstack developer with projects completed with HTML, CSS, Python, 
+                            JavaScript, TypeScript and React Native. I also have experience working with SQL and 
+                            PostgreSQL databases along with deployment onto Heroku. 
+                        </p>
+                        <ul class="logo-list">
+                            <li class="social-list__item">
+                                <i class="fab fa-python fa-2x"></i>
+                            </li>
+                            <li class="social-list__item">
+                                <i class="fab fa-js fa-2x"></i>
+                            </li>
+                            <li class="social-list__item">
+                                <i class="fab fa-html5 fa-2x"></i>
+                            </li>
+                            <li class="social-list__item">
+                                <i class="fab fa-css3 fa-2x"></i>
+                            </li>
+                            <li class="social-list__item">
+                                <i class="fab fa-github fa-2x"></i>
+                            </li>
+                        </ul>
+                    </div> 
+                </div>
+            </section>
+
+            <!-- Work -->
+            <section class="work hidden" id="work">
+            <h2 class="section__title section__title--work">Projects</h2>
+            <!-- Slideshow container -->
+            <div class="slideshow-container">
+                
+                <!-- Full-width images with number and caption text -->
+
+                <div class="mySlides fade">
+
+                    <a href="http://zymptoms.herokuapp.com/" target="_blank">
+                    <div class="row_Zymptom">
+                        
+                        <div class="column_Zymptom">
+                        <img src="images/projects/ZymptomLogin.jpg" alt="ZymptomLogin" style="width:100%">
+                        </div>
+                        <div class="column_Zymptom">
+                        <img src="images/projects/ZymptomExplanation.jpg" alt="ZymptomExplanation" style="width:100%">
+                        </div>
+                        <div class="column_Zymptom">
+                        <img src="images/projects/ZymptomSymptoms.jpg" alt="ZymptomSymptoms" style="width:100%">
+                        </div>
+                    </div>
+
+                    </a>
+                    <h3 class="section__subtitle--work">Zymptom</h3>
+
+                    <p> Mobile and web app that allows users to upload symptoms to help spread awareness in hopes of preventing another pandemic</p>
+                    <div class="tech-group">
+                        <button class="button">TypeScript</button>
+                        <button class="button">React Native</button>
+                        <button class="button">CSS</button>
+                        <button class="button">Expo</button>
+                    </div>
+                    <a class="github__link" href="http://zymptoms.herokuapp.com/" target="_blank">
+                        <i class="fas fa-play-circle fa-2x"></i></a>
+                    <a class="github__link" href="https://github.com/ridwan102/HackQuarantine_Zymptom" target="_blank">
+                        <i class="fab fa-github fa-2x"></i></a>
+                    <a class="github__link" href="https://www.youtube.com/watch?v=xqJC70eHndo&t=5s" target="_blank">
+                        <i class="fab fa-youtube fa-2x"></i></a>
                 </div>
                 
-                <img src="images/self.png" alt="Ridwan smiling" class="about-me__img">
+                <div class="mySlides fade">
+                <a href="https://cs50stock.herokuapp.com/" target="_blank">
+                    <img src="images/projects/ThisIsRidStockTrader.png" alt="ThisIsRidStockTrader" class="work__img">
+                </a>
+                    <h3 class="section__subtitle--work">ThisIsRid Stock Trader</h3>
+
+                    <p> Stock trader web app that allows user to receive quote, buy and sell stock. </p>
+
+                    <div class="tech-group">
+                        <button class="button">Python</button>
+                        <button class="button">HTML</button>
+                        <button class="button">CSS</button>
+                        <button class="button">PostgreSQL</button>
+                        <button class="button">Heroku</button>
+                    </div>
+
+                    <a class="github__link" href="https://cs50stock.herokuapp.com/" target="_blank">
+                        <i class="fas fa-play-circle fa-2x"></i></a>
+                    <a class="github__link" href="https://github.com/ridwan102/cs50stock" target="_blank">
+                        <i class="fab fa-github fa-2x"></i></a>
+                    <a class="github__link" href="https://www.youtube.com/watch?v=H0m9-s33CEg&feature=youtu.be" target="_blank">
+                        <i class="fab fa-youtube fa-2x"></i></a>
+                </div>
+
+                <div class="mySlides fade">
+                    <a href="https://www.desimom.co/" target="_blank">
+                    <img src="images/projects/DesiMom.jpeg" alt="DesiMom" class="work__img">
+                    </a>
+                    <h3 class="section__subtitle--work">DesiMom Food</h3>
+                    
+                    <p> E-Commerce website for Pakistani, online food orders</p>
+                    <div class="tech-group">
+                        <button class="button">JavaScript</button>
+                        <button class="button">React</button>
+                        <button class="button">CSS</button>
+                        <button class="button">Netlify</button>
+                    </div>
+                    <a class="github__link" href="https://www.desimom.co" target="_blank">
+                        <i class="fas fa-play-circle fa-2x"></i></a>
+                    <a class="github__link" href="https://github.com/ridwan102/desimom" target="_blank">
+                        <i class="fab fa-github fa-2x"></i></a>
+                    <a class="github__link" href="https://www.youtube.com/watch?v=5Rm0ux0WJ7s&t=3s" target="_blank">
+                        <i class="fab fa-youtube fa-2x"></i></a>
+                </div>
+
+                <!-- <div class="mySlides fade">
+                    <a href="https://ridwan102.github.io/RockPaperScissors/" target="_blank">
+                    <img src="images/projects/RockPaperScissors.png" alt="RockPaperScissors" class="work__img">
+                    </a>
+                    <div class="section__description--work">
+                    <h3 class="section__subtitle--work">Rock, Paper, Scissors</h3>
+                    <p> Play Rock, Paper, Scissors against the computer. First to 5 wins!</p>
+                    <div class="tech-group">
+                        <button class="button">JavaScript</button>
+                        <button class="button">HTML</button>
+                        <button class="button">CSS</button>
+                    </div>
+                    <a class="github__link" href="https://ridwan102.github.io/RockPaperScissors/" target="_blank">
+                        <i class="fas fa-play-circle fa-2x"></i></a>
+                    <a class="github__link" href="https://github.com/ridwan102/RockPaperScissors" target="_blank">
+                        <i class="fab fa-github fa-2x"></i></a>
+                    <a class="github__link" href="https://www.youtube.com/watch?v=lRn9BFgXgxU" target="_blank">
+                        <i class="fab fa-youtube fa-2x"></i></a>
+                    </div>
+                </div>
+
+                <div class="mySlides fade">
+                <img src="images/projects/BPAMProposalGenerator.png" alt="BPAMProposalGenerator" class="work__img">
+                <div class="section__description--work">
+                    <h3 class="section__subtitle--work">Bright Power Proposal Generator</h3>
+                    <p> Proposal generator within Microsoft Word that calls different project scopes into document using Macros</p>
+                    <div class="tech-group">
+                        <button class="button">XML</button>
+                        <button class="button">VBA</button>
+                        <button class="button">Macros</button>
+                        <button class="button">Microsoft Word</button>
+                    </div>
+                    <a class="github__link" href="https://github.com/ridwan102/Bright_Power_Account_Management_Proposal_Generator" target="_blank">
+                        <i class="fab fa-github fa-2x"></i></a>
+                    <a class="github__link" href="https://www.youtube.com/watch?v=7eAP46LL2hc" target="_blank">
+                        <i class="fab fa-youtube fa-2x"></i></a>
+                </div>
+                </div> -->
+
+                <!-- Next and previous buttons -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+
+            <br>
+
+            <!-- The dots/circles -->
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
+
+            </section>
+
+            <!-- Pictures -->
+            <section class="pictures hidden" id="pictures">
+                <h2 class="section__title section__title--pictures">Memories</h2>
+
+                <div class="portfolio">
+
+                    <!-- Portfolio Item 01 -->
+                    <a class="portfolio__item">
+                        <img src="images/portfolio/portfolio1.jpg" alt="CitiField" onclick="openModal();currentSlidePic(1)" 
+                        class="portfolio__img">
+                    </a>
+
+                    <!-- Portfolio Item 02 -->
+                    <a class="portfolio__item">
+                        <img src="images/portfolio/portfolio2.jpg" alt="CNU" onclick="openModal();currentSlidePic(2)"
+                        class="portfolio__img">
+                    </a>
+
+                    <!-- Portfolio Item 03 -->
+                    <a class="portfolio__item">
+                        <img src="images/portfolio/portfolio3.jpg" alt="Amsterdam" onclick="openModal();currentSlidePic(3)"
+                        class="portfolio__img">
+                    </a>
+
+                    <!-- Portfolio Item 04 -->
+                    <a class="portfolio__item">
+                        <img src="images/portfolio/portfolio4.jpg" alt="GrandCentral" onclick="openModal();currentSlidePic(4)" 
+                        class="portfolio__img">
+                    </a>
+
+                    <!-- Portfolio Item 05 -->
+                    <a class="portfolio__item">
+                        <img src="images/portfolio/portfolio5.jpg" alt="AmsterdamCentraal" onclick="openModal();currentSlidePic(5)"
+                        class="portfolio__img">
+                    </a>
+
+                    <!-- Portfolio Item 06 -->
+                    <a class="portfolio__item">
+                        <img src="images/portfolio/portfolio6.jpg" alt="HorseshoeBend" onclick="openModal();currentSlidePic(6)"
+                        class="portfolio__img">
+                    </a>
+
+                    <!-- Portfolio Item 07 -->
+                    <a class="portfolio__item">
+                        <img src="images/portfolio/portfolio7.jpg" alt="GrandCanyon" onclick="openModal();currentSlidePic(7)"
+                        class="portfolio__img">
+                    </a>
+
+                    <!-- Portfolio Item 08 -->
+                    <a class="portfolio__item">
+                        <img src="images/portfolio/portfolio8.jpg" alt="Yosemite" onclick="openModal();currentSlidePic(8)" 
+                        class="portfolio__img">
+                    </a>
+
+                    <!-- Portfolio Item 09 -->
+                    <a class="portfolio__item">
+                        <img src="images/portfolio/portfolio9.jpg" alt="AmsterdamFaraz" onclick="openModal();currentSlidePic(9)"
+                        class="portfolio__img">
+                    </a>                 
+                </div>
+                
+                <!-- The Modal/Lightbox -->
+                <div id="myModal" class="modal">
+                    <span class="close cursor" onclick="closeModal()">&times;</span>
+                    <div class="modal-content">
+                
+                        <div class="myPictures">
+                            <img src="images/portfolio/portfolio1.jpg">
+                        </div>
+                    
+                        <div class="myPictures">
+                            <img src="images/portfolio/portfolio2.jpg">
+                        </div>
+                    
+                        <div class="myPictures">
+                            <img src="images/portfolio/portfolio3.jpg">
+                        </div>
+                    
+                        <div class="myPictures">
+                            <img src="images/portfolio/portfolio4.jpg">
+                        </div>
+
+                        <div class="myPictures">
+                            <img src="images/portfolio/portfolio5.jpg">
+                        </div>
+                    
+                        <div class="myPictures">
+                            <img src="images/portfolio/portfolio6.jpg">
+                        </div>
+                    
+                        <div class="myPictures">
+                            <img src="images/portfolio/portfolio7.jpg">
+                        </div>
+                    
+                        <div class="myPictures">
+                            <img src="images/portfolio/portfolio8.jpg">
+                        </div>
+
+                        <div class="myPictures">
+                            <img src="images/portfolio/portfolio9.jpg">
+                        </div>
+
+                        <!-- Next/previous controls -->
+                        <a class="prevPic" onclick="plusSlidesPic(-1)">&#10094;</a>
+                        <a class="nextPic" onclick="plusSlidesPic(1)">&#10095;</a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Videos -->
+            <section class="video hidden" id="video">
+                <div
+                    class="vid vimeo"
+                    vimeoSrc="401233922"
+                ></div>
             </section>
         </div>
 
-        <!-- My Services -->
-        <section class="my-services hidden" id="services">
-            <h2 class="section__title section__title--services">What I do</h2>
-            <div class="services">
-                <div class="service">
-                    <div class="service__title">Full Stack Developer</div>
-                    <p>I am a fullstack developer with projects completed with HTML, CSS, Python, 
-                        JavaScript, TypeScript and React Native. I also have experience working with SQL and 
-                        PostgreSQL databases along with deployment onto Heroku. 
-                    </p>
-                    <ul class="logo-list">
-                        <li class="social-list__item">
-                            <i class="fab fa-python fa-2x"></i>
-                        </li>
-                        <li class="social-list__item">
-                            <i class="fab fa-js fa-2x"></i>
-                        </li>
-                        <li class="social-list__item">
-                            <i class="fab fa-html5 fa-2x"></i>
-                        </li>
-                        <li class="social-list__item">
-                            <i class="fab fa-css3 fa-2x"></i>
-                        </li>
-                        <li class="social-list__item">
-                            <i class="fab fa-github fa-2x"></i>
-                        </li>
-                    </ul>
-                </div> 
-            </div>
-        </section>
-
-        <!-- Work -->
-        <section class="work hidden" id="work">
-          <h2 class="section__title section__title--work">Projects</h2>
-          <!-- Slideshow container -->
-          <div class="slideshow-container">
-            
-            <!-- Full-width images with number and caption text -->
-
-            <div class="mySlides fade">
-                <a href="http://zymptoms.herokuapp.com/" target="_blank">
-                  <div class="row_Zymptom">
-                    
-                    <div class="column_Zymptom">
-                      <img src="images/projects/ZymptomLogin.jpg" alt="ZymptomLogin" style="width:100%">
-                    </div>
-                    <div class="column_Zymptom">
-                      <img src="images/projects/ZymptomExplanation.jpg" alt="ZymptomExplanation" style="width:100%">
-                    </div>
-                    <div class="column_Zymptom">
-                      <img src="images/projects/ZymptomSymptoms.jpg" alt="ZymptomSymptoms" style="width:100%">
-                    </div>
-                  </div>
-
-                </a>
-                  <h3 class="section__subtitle--work">Zymptom</h3>
-                  <p> Mobile and web app that allows users to upload symptoms to help spread awareness in hopes of preventing another pandemic</p>
-                  <div class="tech-group">
-                    <button class="button">TypeScript</button>
-                    <button class="button">React Native</button>
-                    <button class="button">CSS</button>
-                    <button class="button">Expo</button>
-                </div>
-                  <a class="github__link" href="http://zymptoms.herokuapp.com/" target="_blank">
-                    <i class="fas fa-play-circle fa-2x"></i></a>
-                  <a class="github__link" href="https://github.com/ridwan102/HackQuarantine_Zymptom" target="_blank">
-                      <i class="fab fa-github fa-2x"></i></a>
-                  <a class="github__link" href="https://www.youtube.com/watch?v=xqJC70eHndo&t=5s" target="_blank">
-                      <i class="fab fa-youtube fa-2x"></i></a>
-            </div>
-            
-            <div class="mySlides fade">
-              <a href="https://cs50stock.herokuapp.com/" target="_blank">
-                <img src="images/projects/ThisIsRidStockTrader.png" alt="ThisIsRidStockTrader" class="work__img">
-              </a>
-                <h3 class="section__subtitle--work">ThisIsRid Stock Trader</h3>
-                <p> Stock trader web app that allows user to receive quote, buy and sell stock. </p>
-                <div class="tech-group">
-                    <button class="button">Python</button>
-                    <button class="button">HTML</button>
-                    <button class="button">CSS</button>
-                    <button class="button">PostgreSQL</button>
-                    <button class="button">Heroku</button>
-                </div>
-                <a class="github__link" href="https://cs50stock.herokuapp.com/" target="_blank">
-                    <i class="fas fa-play-circle fa-2x"></i></a>
-                <a class="github__link" href="https://github.com/ridwan102/cs50stock" target="_blank">
-                    <i class="fab fa-github fa-2x"></i></a>
-                <a class="github__link" href="https://www.youtube.com/watch?v=H0m9-s33CEg&feature=youtu.be" target="_blank">
-                    <i class="fab fa-youtube fa-2x"></i></a>
-            </div>
-
-            <div class="mySlides fade">
-                <a href="https://www.desimom.co/" target="_blank">
-                  <img src="images/projects/DesiMom.jpeg" alt="DesiMom" class="work__img">
-                </a>
-                  <h3 class="section__subtitle--work">DesiMom Food</h3>
-                  <p> E-Commerce website for Pakistani, online food orders</p>
-                  <div class="tech-group">
-                    <button class="button">JavaScript</button>
-                    <button class="button">React</button>
-                    <button class="button">CSS</button>
-                    <button class="button">Netlify</button>
-                  </div>
-                  <a class="github__link" href="https://www.desimom.co" target="_blank">
-                      <i class="fas fa-play-circle fa-2x"></i></a>
-                  <a class="github__link" href="https://github.com/ridwan102/desimom" target="_blank">
-                      <i class="fab fa-github fa-2x"></i></a>
-                  <a class="github__link" href="https://www.youtube.com/watch?v=5Rm0ux0WJ7s&t=3s" target="_blank">
-                      <i class="fab fa-youtube fa-2x"></i></a>
-              </div>
-
-            <div class="mySlides fade">
-                <a href="https://ridwan102.github.io/RockPaperScissors/" target="_blank">
-                  <img src="images/projects/RockPaperScissors.png" alt="RockPaperScissors" class="work__img">
-                </a>
-                <div class="section__description--work">
-                  <h3 class="section__subtitle--work">Rock, Paper, Scissors</h3>
-                  <p> Play Rock, Paper, Scissors against the computer. First to 5 wins!</p>
-                  <div class="tech-group">
-                    <button class="button">JavaScript</button>
-                    <button class="button">HTML</button>
-                    <button class="button">CSS</button>
-                  </div>
-                  <a class="github__link" href="https://ridwan102.github.io/RockPaperScissors/" target="_blank">
-                      <i class="fas fa-play-circle fa-2x"></i></a>
-                  <a class="github__link" href="https://github.com/ridwan102/RockPaperScissors" target="_blank">
-                      <i class="fab fa-github fa-2x"></i></a>
-                  <a class="github__link" href="https://www.youtube.com/watch?v=lRn9BFgXgxU" target="_blank">
-                      <i class="fab fa-youtube fa-2x"></i></a>
-                </div>
-            </div>
-
-            <div class="mySlides fade">
-              <img src="images/projects/BPAMProposalGenerator.png" alt="BPAMProposalGenerator" class="work__img">
-              <div class="section__description--work">
-                <h3 class="section__subtitle--work">Bright Power Proposal Generator</h3>
-                <p> Proposal generator within Microsoft Word that calls different project scopes into document using Macros</p>
-                <div class="tech-group">
-                    <button class="button">XML</button>
-                    <button class="button">VBA</button>
-                    <button class="button">Macros</button>
-                    <button class="button">Microsoft Word</button>
-                  </div>
-                <a class="github__link" href="https://github.com/ridwan102/Bright_Power_Account_Management_Proposal_Generator" target="_blank">
-                    <i class="fab fa-github fa-2x"></i></a>
-                <a class="github__link" href="https://www.youtube.com/watch?v=7eAP46LL2hc" target="_blank">
-                    <i class="fab fa-youtube fa-2x"></i></a>
-              </div>
-            </div>
-
-            <!-- Next and previous buttons -->
-            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-            <a class="next" onclick="plusSlides(1)">&#10095;</a>
-          </div>
-
-          <br>
-
-          <!-- The dots/circles -->
-          <div style="text-align:center">
-            <span class="dot" onclick="currentSlide(1)"></span>
-            <span class="dot" onclick="currentSlide(2)"></span>
-            <span class="dot" onclick="currentSlide(3)"></span>
-          </div>
-
-        </section>
-
-        <!-- Pictures -->
-        <section class="pictures hidden" id="pictures">
-            <h2 class="section__title section__title--pictures">Memories</h2>
-
-            <div class="portfolio">
-
-                <!-- Portfolio Item 01 -->
-                <a class="portfolio__item">
-                    <img src="images/portfolio/portfolio1.jpg" alt="CitiField" onclick="openModal();currentSlidePic(1)" 
-                    class="portfolio__img">
-                </a>
-
-                <!-- Portfolio Item 02 -->
-                <a class="portfolio__item">
-                    <img src="images/portfolio/portfolio2.jpg" alt="CNU" onclick="openModal();currentSlidePic(2)"
-                    class="portfolio__img">
-                </a>
-
-                <!-- Portfolio Item 03 -->
-                <a class="portfolio__item">
-                    <img src="images/portfolio/portfolio3.jpg" alt="Amsterdam" onclick="openModal();currentSlidePic(3)"
-                    class="portfolio__img">
-                </a>
-
-                <!-- Portfolio Item 04 -->
-                <a class="portfolio__item">
-                    <img src="images/portfolio/portfolio4.jpg" alt="GrandCentral" onclick="openModal();currentSlidePic(4)" 
-                    class="portfolio__img">
-                </a>
-
-                <!-- Portfolio Item 05 -->
-                <a class="portfolio__item">
-                    <img src="images/portfolio/portfolio5.jpg" alt="AmsterdamCentraal" onclick="openModal();currentSlidePic(5)"
-                    class="portfolio__img">
-                </a>
-
-                <!-- Portfolio Item 06 -->
-                <a class="portfolio__item">
-                    <img src="images/portfolio/portfolio6.jpg" alt="HorseshoeBend" onclick="openModal();currentSlidePic(6)"
-                    class="portfolio__img">
-                </a>
-
-                <!-- Portfolio Item 07 -->
-                <a class="portfolio__item">
-                    <img src="images/portfolio/portfolio7.jpg" alt="GrandCanyon" onclick="openModal();currentSlidePic(7)"
-                    class="portfolio__img">
-                </a>
-
-                <!-- Portfolio Item 08 -->
-                <a class="portfolio__item">
-                    <img src="images/portfolio/portfolio8.jpg" alt="Yosemite" onclick="openModal();currentSlidePic(8)" 
-                    class="portfolio__img">
-                </a>
-
-                <!-- Portfolio Item 09 -->
-                <a class="portfolio__item">
-                    <img src="images/portfolio/portfolio9.jpg" alt="AmsterdamFaraz" onclick="openModal();currentSlidePic(9)"
-                    class="portfolio__img">
-                </a>                 
-            </div>
-            
-            <!-- The Modal/Lightbox -->
-            <div id="myModal" class="modal">
-                <span class="close cursor" onclick="closeModal()">&times;</span>
-                <div class="modal-content">
-            
-                    <div class="myPictures">
-                        <img src="images/portfolio/portfolio1.jpg">
-                    </div>
-                
-                    <div class="myPictures">
-                        <img src="images/portfolio/portfolio2.jpg">
-                    </div>
-                
-                    <div class="myPictures">
-                        <img src="images/portfolio/portfolio3.jpg">
-                    </div>
-                
-                    <div class="myPictures">
-                        <img src="images/portfolio/portfolio4.jpg">
-                    </div>
-
-                    <div class="myPictures">
-                        <img src="images/portfolio/portfolio5.jpg">
-                    </div>
-                
-                    <div class="myPictures">
-                        <img src="images/portfolio/portfolio6.jpg">
-                    </div>
-                
-                    <div class="myPictures">
-                        <img src="images/portfolio/portfolio7.jpg">
-                    </div>
-                
-                    <div class="myPictures">
-                        <img src="images/portfolio/portfolio8.jpg">
-                    </div>
-
-                    <div class="myPictures">
-                        <img src="images/portfolio/portfolio9.jpg">
-                    </div>
-
-                    <!-- Next/previous controls -->
-                    <a class="prevPic" onclick="plusSlidesPic(-1)">&#10094;</a>
-                    <a class="nextPic" onclick="plusSlidesPic(1)">&#10095;</a>
-                </div>
-            </div>
-        </section>
-
-        <!-- Videos -->
-        <section class="video hidden" id="video">
-            <div
-                class="vid vimeo"
-                vimeoSrc="401233922"
-            ></div>
-        </section>
-
 
         <!-- Footer -->
-        <footer class="footer" id="footer">
+        <!-- <footer class="footer" id="footer">
             <ul class="social-list">
                 <li class="social-list__item">
                     <a class="social-list__link" href="./Ridwan_Alam_Resume.pdf" download="Ridwan Alam Resume" target="__blank">
@@ -411,7 +445,7 @@
                     <i class="fab fa-youtube fa-2x"></i></a>
                 </li>
             </ul>
-        </footer>
+        </footer> -->
 
         <script src="index.js"></script>
         <script src="BigPicture.js"></script>
