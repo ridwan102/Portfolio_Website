@@ -321,8 +321,8 @@ source: https://www.w3schools.com/howto/howto_css_fixed_sidebar.asp */
     z-index: 1; /* Stay on top */
     top: 0; /* Stay at the top */
     left: 0;
-    /* -webkit-box-pack: center;
-        justify-content: center; */
+    -webkit-box-pack: center;
+        justify-content: center;
     -webkit-box-align: center;
         align-items: center;
     -webkit-box-orient: vertical;
@@ -900,8 +900,8 @@ source: https://www.w3schools.com/howto/howto_css_fixed_sidebar.asp */
 .close {
     color: white;
     position: absolute;
-    bottom: -0.5em;
-    right: 100;
+    top: 0.1em;
+    left: 35em;
     font-size: 35px;
 }
 
@@ -1039,7 +1039,7 @@ img {
 
 /* footer */
 
-.footer {
+/* .footer {
     background: #2b3033;
     color: var(--clr-accent);
     text-align: center;
@@ -1072,7 +1072,7 @@ img {
             justify-content: center;
     margin: 1em 0 0;
     padding: 0;
-}
+} */
 
 .social-list__item{
     margin: 0 .5em;
